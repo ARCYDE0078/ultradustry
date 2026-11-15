@@ -100,7 +100,7 @@ const DBG_MAX_BYTES = 6000000;      // потолок размера файла 
 const DBG_TAIL_LINES = 120;         // сколько последних строк держим в памяти (буфер обмена, запасной вывод)
 const DBG_BEAT_GAME = 10;           // «пульс» состояния: раз в столько секунд в игре...
 const DBG_BEAT_MENU = 30;           // ...и в меню
-const DBG_VERSION = "2.4.0-debug";
+const DBG_VERSION = "2.4.1-debug";
 
 let dbgFile = null;                 // Fi журнала
 let dbgExec = null;                 // ОДИН поток записи: из него же правятся dbgTail и dbgBytes (вызывают из любых потоков)
@@ -766,9 +766,28 @@ function peaceFileNames(){
     return out;
 }
 
-// группы для окна загрузки: сложности секторов, стражи, затишье
+// Файлы «обвязки» мода: музыка главного меню и карт-редактора (слоты), три экранные темы (схемы / база данных / исследования)
+// и праздничные темы меню. РАНЬШЕ их не было в окне загрузки совсем: они докачивались только фоном (prefetchStartup / applyMusicSlots)
+// и только при включённой автозагрузке, а «Скачать всё» их не включало - человек жал «Скачать всё», меню и редактор оставались
+// ванильными, и кнопки, чтобы это исправить, не было (жалоба sonka 2026-11-15 «музыка из меню и редактора не изменились»).
+// Порядок: меню, редактор, экраны, праздники. Файлов нет в каталоге (старый tracks.json) - группы в окне нет.
+function menuGroupFiles(){
+    let out = [], sl = tracksData.slots || {}, sp = tracksData.special || {}, hol = tracksData.holidays || {};
+    let add = n => { if (n && tracksData.files[n] != null && out.indexOf(n) < 0) out.push(n); };
+    let k = Object.keys(sl);
+    for (let i = 0; i < k.length; i++) add(sl[k[i]]);
+    k = Object.keys(sp);
+    for (let i = 0; i < k.length; i++) add(sp[k[i]]);
+    k = Object.keys(hol);
+    for (let i = 0; i < k.length; i++) add(hol[k[i]] && hol[k[i]].file);
+    return out;
+}
+
+// группы для окна загрузки: меню/редактор, сложности секторов, стражи, затишье
 function packGroups(){
     let groups = [];
+    let mf = menuGroupFiles();
+    if (mf.length > 0) groups.push({id: "menu", tracks: [], files: mf});
     for (let i = 0; i < POOL_TIERS.length; i++) groups.push({id: POOL_TIERS[i], tracks: tracksData.tiers[POOL_TIERS[i]]});
     groups.push({id: "guardians", tracks: bossThemeIds()});
     groups.push({id: "peace", tracks: tracksData.peace});
@@ -777,6 +796,7 @@ function packGroups(){
 }
 
 function groupFileNames(g){
+    if (g.files != null) return g.files.slice(); // явный список файлов (группа меню/редактора), без треков каталога
     let out = [];
     for (let i = 0; i < g.tracks.length; i++) {
         let names = trackFileNames(g.tracks[i]);
@@ -1019,15 +1039,43 @@ function runAudio(ex, fn){
 // повторно не копирует, если размер тот же) и читает копию. Нам это подходит: тот же результат, только +1 копия на диске.
 // Поэтому: первый раз пробуем load(fi, direct); если такого метода нет - запоминаем и дальше зовём load(fi). Любую другую
 // ошибку (нет файла, битый ogg) пробрасываем как есть, чтобы не маскировать настоящие сбои.
+// ЗАВИСАНИЯ НА ПЕТЛЕ (жалоба sonka 2026-11-15 «при зацикливании треков небольшие зависания»). Замерено на настоящем Soloud (SoLoud
+// 20260903 + MiniAudio, ogg ≈510 кбит/с как на вики): у голоса, открытого с ДИСКА (load(Fi) / load(Fi, boolean)), ПЕРВЫЙ перезапуск
+// петли после каждого play() занимает ≈150 мс (при 4 голосах ≈325 мс) и держит мьютекс микшера: встают ВСЕ вызовы Soloud с главного
+// потока (кадр, звуки выстрелов) и сам звук (следующий перезапуск наступает через 6,15 с вместо 6,0 у 6-секундного клипа). Остальные
+// перезапуски чистые (1-8 мс); стоимость не зависит ни от битрейта, ни от длины трека, она на каждый play(), в том числе при повторном
+// play() того же Music. Причина - диск: под strace видно по сотне тысяч lseek(0)/lseek(конец файла) в секунду, декодер читает файл
+// через обёртку, которая на каждый запрос прыгает в конец и обратно. Тот же файл, загруженный из ПАМЯТИ (Music.load(byte[]) =
+// Soloud.streamLoadBytes, одинаково в официальном Arc 159.7 и в форке), этого не делает: перезапуск петли 0,0-0,5 мс, период ровно
+// 6,00 с, обычный вызов 0,01 мс вместо 0,5-10 мс, open 9 мс вместо ≈172, play() 0,6 мс вместо 11-17. Цена: нативная память
+// ≈ размер файла (18 МБ ogg -> +23 МБ RSS, куча Java не растёт), поэтому держим открытыми не больше OPEN_BYTES_BUDGET (pruneLoaded).
+// Порядок: load(byte[]) -> load(Fi, boolean) (форк) -> load(Fi) (старый официальный Arc, где нет и byte[]; в v146 нет). Настоящую
+// ошибку (нет файла, битый ogg) пробрасываем как есть: «Can't find method» - единственный признак отсутствия перегрузки.
+let memLoadOk = null;        // null - ещё не проверяли, true - есть load(byte[]), false - нет (идём старым путём)
 let directLoadOk = null;     // null - ещё не проверяли, true - есть load(Fi, boolean), false - только load(Fi)
+// true - файл открыт из памяти (весит в нативной памяти), false - с диска
 function loadMusicFile(mus, fi, direct){
+    if (memLoadOk === null) {
+        // в отладочной сборке старый путь можно включить принудительно (сравнение/проверка отката): ultradustry-dbg-nomem
+        memLoadOk = !(DEBUG && Core.settings.getBool("ultradustry-dbg-nomem", false));
+        if (DEBUG) dbg("ОТКРЫТИЕ: файлы читаются " + (memLoadOk ? "ИЗ ПАМЯТИ, load(byte[]) (без зависания на первой петле), при отсутствии метода перейду на чтение с диска" : "с диска (память отключена настройкой ultradustry-dbg-nomem)"));
+    }
+    if (memLoadOk) {
+        let bytes = fi.readBytes(); // ошибка чтения (нет файла) уходит наверх как есть
+        try { mus.load(bytes); return true; }
+        catch (e) {
+            if (String(e).indexOf("Can't find method") < 0) throw e;
+            memLoadOk = false;
+            ulog.info("[ULTRAdustry] в этом Arc нет Music.load(byte[]): открываю файлы с диска (на первой петле каждого трека возможен рывок ~150 мс)");
+        }
+    }
     // в отладочной сборке путь «официального Arc» можно включить принудительно (проверка на форке): ultradustry-dbg-nodirect
     if (directLoadOk === null) {
         directLoadOk = !(DEBUG && Core.settings.getBool("ultradustry-dbg-nodirect", false));
         if (DEBUG) dbg("ОТКРЫТИЕ: способ чтения файлов - " + (directLoadOk ? "load(Fi, boolean) (напрямую с диска), при отсутствии метода перейду на load(Fi)" : "load(Fi) (с копией в кэш Arc; включено принудительно настройкой ultradustry-dbg-nodirect)"));
     }
     if (directLoadOk) {
-        try { mus.load(fi, direct); return; }
+        try { mus.load(fi, direct); return false; }
         catch (e) {
             if (String(e).indexOf("Can't find method") < 0) throw e;
             directLoadOk = false;
@@ -1035,9 +1083,10 @@ function loadMusicFile(mus, fi, direct){
         }
     }
     mus.load(fi);
+    return false;
 }
 
-// имя файла -> {name, music, state: 0 открывается | 1 готов | -1 не открылся, length (с), dead}
+// имя файла -> {name, music, state: 0 открывается | 1 готов | -1 не открылся, length (с), dead, memBytes (сколько весит в памяти)}
 const opened = {};
 
 // Состояние файла для вызывающего: 1 — готов играть, 0 — открывается (повторить в следующем кадре),
@@ -1058,23 +1107,25 @@ function ensureOpen(name){
     let rec = {name: name, music: null, state: 0, length: 0, dead: false};
     opened[name] = rec;
     if (DEBUG) dbg("ОТКРЫТИЕ старт: " + name + " <- " + dbgPath(fi.absolutePath()) + " (" + fi.length() + " байт на диске)" + ", потоки " + (audioThreadsFailed ? "ГЛАВНЫЙ (аудио-потоки не создались)" : "отдельные"));
-    // с диска напрямую (load(fi, true)): Music(Fi) сперва копирует файл в кэш Arc (в официальном Arc прямого чтения нет, см. loadMusicFile)
+    // с диска напрямую (load(fi, true)): Music(Fi) сперва копирует файл в кэш Arc (в официальном Arc прямого чтения нет, см. loadMusicFile);
+    // но по умолчанию файл читается в память целиком (load(byte[])) - см. комментарий у loadMusicFile
     let direct = true;
+    let fileBytes = m != null ? Number(m.bytes) || 0 : 0;
     runAudio(audioLoader, () => {
-        let mus = null, len = 0, err = null;
+        let mus = null, len = 0, err = null, inMemory = false;
         let t0 = DEBUG ? Number(Time.millis()) : 0;
         try {
             mus = new Music();
-            loadMusicFile(mus, fi, direct);
+            inMemory = loadMusicFile(mus, fi, direct);
         } catch (e) { err = DEBUG ? dbgErrText(e) : String(e); mus = null; }
         if (mus != null) { try { len = Number(mus.getLength()); } catch (e2) { len = 0; } }
         let took = DEBUG ? Number(Time.millis()) - t0 : 0;
-        Core.app.post(() => openDone(rec, mus, len, err, took));
+        Core.app.post(() => openDone(rec, mus, len, err, took, inMemory ? fileBytes : 0));
     });
     return 0;
 }
 
-function openDone(rec, mus, len, err, took){
+function openDone(rec, mus, len, err, took, memBytes){
     if (DEBUG) dbg("ОТКРЫТИЕ итог: " + rec.name + " -> " + (mus != null ? "открыт за " + took + " мс, длина " + fixed(len, 1) + " с" + (rec.dead ? " (но уже выгружен)" : "") + (len > 0 && len < 1e6 ? "" : "  <<< ДЛИНА НЕПОНЯТНАЯ (0 или огромная): файл не декодируется?") : "НЕ ОТКРЫЛСЯ: " + err));
     if (rec.dead) { // пока открывался, файл успели выгрузить (перекачка, удаление)
         if (mus != null) disposeMusic(mus);
@@ -1091,6 +1142,7 @@ function openDone(rec, mus, len, err, took){
     rec.music = mus;
     rec.length = (len > 0 && len < 1e6) ? len : 0;
     rec.state = 1;
+    rec.memBytes = Number(memBytes) || 0; // сколько файл весит в нативной памяти (0 - читается с диска)
     pruneLoaded();
 }
 
@@ -1150,6 +1202,13 @@ function progressText(){
     return s;
 }
 
+// «Сейчас играет из мода: меню - slot-menu.ogg; редактор - ванильная»: видно, подставился ли скачанный файл в слот
+function slotStatusText(){
+    let van = bundleText("ultradustry.pack.slot.vanilla");
+    let m = slotState.menu, e = slotState.editor;
+    return bundleText("ultradustry.pack.slots", m != null ? m.name : van, e != null ? e.name : van);
+}
+
 function rebuildPack(){
     let t = packBody;
     t.clearChildren();
@@ -1160,6 +1219,8 @@ function rebuildPack(){
     t.add(bundleText("ultradustry.pack.info")).wrap().width(width).left().row();
     t.add(bundleText("ultradustry.pack.folder", cacheDir().absolutePath())).wrap().width(width).left().color(Pal.lightishGray).row();
     t.label(() => progressText()).wrap().width(width).left().row();
+    // что реально играет в меню и редакторе прямо сейчас (живая строка: подмена случается через пару секунд после скачивания)
+    if (menuGroupFiles().length > 0) t.label(() => slotStatusText()).wrap().width(width).left().color(Pal.lightishGray).row();
 
     let allMissing = 0;
     let groups = packGroups();
@@ -2760,6 +2821,9 @@ function setupTerminalMenu(mod){
 
 const voices = {};            // имя файла -> {name, music, gain, keep, loop, age}
 const MAX_OPEN_MUSIC = 10;    // сколько открытых файлов держим про запас
+// ...и не больше стольки байт: файл, открытый из памяти, весит в нативной памяти ≈ свой размер (см. loadMusicFile). Рабочий набор —
+// тема стража (3 файла по 5-19 МБ) + пара (2 файла) ≈ 40-70 МБ; сверху про запас. Нужные сцене и играющие файлы не выгружаем никогда.
+const OPEN_BYTES_BUDGET = 96 * 1048576;
 const STARTUP_DELAY_SECONDS = 4;    // пауза после захода на карту, прежде чем мод решит, что включать
 const PEACE_ROTATE_SECONDS = 240;   // как часто менять тихую тему, если затишье длится долго
 const PVP_ROTATE_SECONDS = 420;     // как часто менять тему PvP (если скачано больше одной)
@@ -2894,15 +2958,19 @@ function protectedFileNames(){
     return names;
 }
 
-// Держим открытыми не больше MAX_OPEN_MUSIC файлов; играющие, ещё открывающиеся и нужные сцене не трогаем.
+// Держим открытыми не больше MAX_OPEN_MUSIC файлов и не больше OPEN_BYTES_BUDGET байт в памяти; играющие, ещё открывающиеся
+// и нужные сцене не трогаем (даже если из-за них бюджет превышен). Выгружаем с самых старых по порядку открытия.
 function pruneLoaded(){
     let names = Object.keys(opened);
-    if (names.length <= MAX_OPEN_MUSIC) return;
+    let bytes = 0;
+    for (let i = 0; i < names.length; i++) bytes += opened[names[i]].memBytes || 0;
+    if (names.length <= MAX_OPEN_MUSIC && bytes <= OPEN_BYTES_BUDGET) return;
     let need = protectedFileNames();
     let count = names.length;
-    for (let i = 0; i < names.length && count > MAX_OPEN_MUSIC; i++) {
+    for (let i = 0; i < names.length && (count > MAX_OPEN_MUSIC || bytes > OPEN_BYTES_BUDGET); i++) {
         let rec = opened[names[i]];
         if (rec == null || rec.state != 1 || voices[names[i]] != null || need.indexOf(names[i]) >= 0) continue;
+        bytes -= rec.memBytes || 0;
         unloadMusic(names[i]);
         count--;
     }
