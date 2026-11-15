@@ -1,0 +1,1328 @@
+{
+ "version": 1,
+ "note": "Сгенерировано gen_tracks_json.py из ultradustry-sources/manifest.json. Не править руками — править генератор.",
+ "files": {
+  "cold-winds.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/2-1_Calm.ogg?953abd",
+   "bytes": 7019790,
+   "sha1": "953abdb5037e2caf9cb190a22e9b0ab589785ffd",
+   "wiki": "2-1 Calm.ogg"
+  },
+  "cold-winds-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/2-1_Combat.ogg?7ffdaf",
+   "bytes": 7272283,
+   "sha1": "7ffdaf80e7c7241ad6f1b0587ffdda272215c853",
+   "wiki": "2-1 Combat.ogg"
+  },
+  "guts.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/3-1a_Calm.ogg?50d085",
+   "bytes": 6725608,
+   "sha1": "50d0850eb99058d1079df6f6366e37127d4866fd",
+   "wiki": "3-1a Calm.ogg"
+  },
+  "guts-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/3-1a_Combat.ogg?812c68",
+   "bytes": 10536537,
+   "sha1": "812c68133576472a94ea94c61d3ab7e9b412c484",
+   "wiki": "3-1a Combat.ogg"
+  },
+  "dancer-in-the-darkness.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/4-3_Calm.ogg?1eb8b8",
+   "bytes": 4297707,
+   "sha1": "1eb8b8dc761ad9272e70c487e603703931bb6cc8",
+   "wiki": "4-3 Calm.ogg"
+  },
+  "dancer-in-the-darkness-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/4-3_Combat.ogg?16afa1",
+   "bytes": 4220772,
+   "sha1": "16afa17b851ffbbf83717cd20ce82594832ceaf3",
+   "wiki": "4-3 Combat.ogg"
+  },
+  "into-the-fire.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/0-1_Clean.ogg?64f397",
+   "bytes": 4390684,
+   "sha1": "64f39731afeae3d9aaa5f642b54d17e6fa6d577f",
+   "wiki": "0-1 Clean.ogg"
+  },
+  "into-the-fire-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/0-1.ogg?210c06",
+   "bytes": 4446639,
+   "sha1": "210c06353bb95d51bcbff98a10c766044d9d33e8",
+   "wiki": "0-1.ogg"
+  },
+  "a-shattered-illusion.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/1-1b_Calm.ogg?6edf1e",
+   "bytes": 4670650,
+   "sha1": "6edf1e2c046378ed68eb328173858bbb30aaaf91",
+   "wiki": "1-1b Calm.ogg"
+  },
+  "a-shattered-illusion-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/1-1b_Combat.ogg?a60a94",
+   "bytes": 4736326,
+   "sha1": "a60a9454b73dfe2277fe3d80dabe8047cb3a8474",
+   "wiki": "1-1b Combat.ogg"
+  },
+  "requiem.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/2-2_Calm.ogg?a6ac6c",
+   "bytes": 4290216,
+   "sha1": "a6ac6c633735fdef1e9c9dc645a06b7bde47f7cb",
+   "wiki": "2-2 Calm.ogg"
+  },
+  "requiem-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/2-2_Combat.ogg?742c6e",
+   "bytes": 5265724,
+   "sha1": "742c6e8bd5cdcd028e32616cbc83e8addfeee873",
+   "wiki": "2-2 Combat.ogg"
+  },
+  "glory.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/3-1b_Calm.ogg?a81236",
+   "bytes": 3237674,
+   "sha1": "a8123630d60830b43c8bf188c8b647405b8cf3c8",
+   "wiki": "3-1b Calm.ogg"
+  },
+  "glory-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/3-1b_Combat.ogg?57af01",
+   "bytes": 3282791,
+   "sha1": "57af015fc0fbf761e5465a4f83da84560e053969",
+   "wiki": "3-1b Combat.ogg"
+  },
+  "dune-eternal.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/4-1_Calm.ogg?1dac9a",
+   "bytes": 7915350,
+   "sha1": "1dac9a51bafe741d18fa230c9ac6146c0b08c8c0",
+   "wiki": "4-1 Calm.ogg"
+  },
+  "dune-eternal-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/4-1_Combat.ogg?f014d9",
+   "bytes": 8000340,
+   "sha1": "f014d9d8a588ae7e55e3e73c1f8f0a12aef5cebf",
+   "wiki": "4-1 Combat.ogg"
+  },
+  "deep-blue.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/5-1_Calm.ogg?45605f",
+   "bytes": 6683768,
+   "sha1": "45605fae5bfb56b6d3bc746eedbfade341a92ae3",
+   "wiki": "5-1 Calm.ogg"
+  },
+  "deep-blue-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/5-1_Combat.ogg?f1441b",
+   "bytes": 7792207,
+   "sha1": "f1441b7dca4a28048647eff7b433fe26e5d6ef19",
+   "wiki": "5-1 Combat.ogg"
+  },
+  "in-absentia.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-1_Intro_Clean.ogg?761be1",
+   "bytes": 6196799,
+   "sha1": "761be11da3e6626c70788e23ee108631b9d39e9a",
+   "wiki": "8-1 Intro Clean.ogg"
+  },
+  "in-absentia-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-1_Intro.ogg?d96e64",
+   "bytes": 6988629,
+   "sha1": "d96e642b5282891d0fd30b5c26f8be62405dcf1d",
+   "wiki": "8-1 Intro.ogg"
+  },
+  "unstoppable-force.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/0-2_Calm.ogg?34e1c1",
+   "bytes": 5187650,
+   "sha1": "34e1c187303c7924311fdf1f89ebdbb2baa2063d",
+   "wiki": "0-2 Calm.ogg"
+  },
+  "unstoppable-force-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/0-2_Combat.ogg?af202f",
+   "bytes": 5269387,
+   "sha1": "af202f4dd6cdd4ae2c94a20b3d75aa94ef93d3fb",
+   "wiki": "0-2 Combat.ogg"
+  },
+  "castle-vein.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/1-3_Calm.ogg?808dfa",
+   "bytes": 10104175,
+   "sha1": "808dfa17ff849d3d59997429590352ed4f9f8235",
+   "wiki": "1-3 Calm.ogg"
+  },
+  "castle-vein-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/1-3_Combat.ogg?13687d",
+   "bytes": 10290135,
+   "sha1": "13687db9fc2f32b0d1b26de716c6d0f739f7d30c",
+   "wiki": "1-3 Combat.ogg"
+  },
+  "panic-betrayer.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/2-3_Calm.ogg?70a850",
+   "bytes": 7102033,
+   "sha1": "70a850a64e7bff7f87a65a9a1d1e671e54d59851",
+   "wiki": "2-3 Calm.ogg"
+  },
+  "panic-betrayer-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/2-3_Combat.ogg?35d851",
+   "bytes": 7153650,
+   "sha1": "35d851dd9adf8fdda90eb6a8b7c17d7ec4cb9456",
+   "wiki": "2-3 Combat.ogg"
+  },
+  "sands-of-tide.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/4-2_Calm.ogg?ee2676",
+   "bytes": 6910116,
+   "sha1": "ee267650d6bf65db3b12a22d572429f47c3accaa",
+   "wiki": "4-2 Calm.ogg"
+  },
+  "sands-of-tide-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/4-2_Combat.ogg?953e82",
+   "bytes": 6834764,
+   "sha1": "953e826206229e0c8838190721c4a82a39cd5883",
+   "wiki": "4-2 Combat.ogg"
+  },
+  "death-odyssey.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/5-3a_Calm.ogg?66e86d",
+   "bytes": 8672888,
+   "sha1": "66e86d82ff1785ce117fafd2987685ba5ac1a499",
+   "wiki": "5-3a Calm.ogg"
+  },
+  "death-odyssey-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/5-3a_Combat.ogg?ec4450",
+   "bytes": 9756466,
+   "sha1": "ec44504895d59dc35f1bed3618fae9cc75791811",
+   "wiki": "5-3a Combat.ogg"
+  },
+  "spiral-out.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-1_Clean.ogg?c5bc32",
+   "bytes": 7725844,
+   "sha1": "c5bc32d6bccfaaaabdba3ae00b3035d300c5961a",
+   "wiki": "8-1 Clean.ogg"
+  },
+  "spiral-out-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-1.ogg?659b27",
+   "bytes": 8007081,
+   "sha1": "659b27e327309314af210dafc2fdaf43c3e5ee0e",
+   "wiki": "8-1.ogg"
+  },
+  "the-break.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-3_Intro_Clean.ogg?537723",
+   "bytes": 7077186,
+   "sha1": "537723c6d18f5b321baf0b6e392eb123cf8644d8",
+   "wiki": "8-3 Intro Clean.ogg"
+  },
+  "the-break-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-3_Intro.ogg?8961e8",
+   "bytes": 7555208,
+   "sha1": "8961e86c5aeedc846de13b11e34f36d6c03773db",
+   "wiki": "8-3 Intro.ogg"
+  },
+  "a-heart-of-cold.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/A_Heart_of_Cold_Clean.ogg?91f14f",
+   "bytes": 8528020,
+   "sha1": "91f14f0fd3e001b5d59c0e5a7df8ddab580284e9",
+   "wiki": "A Heart of Cold Clean.ogg"
+  },
+  "a-heart-of-cold-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/A_Heart_of_Cold_Combat.ogg?55812d",
+   "bytes": 2255958,
+   "sha1": "55812dc11898c3fca4cc6c8b7cf21c101845c72b",
+   "wiki": "A Heart of Cold Combat.ogg"
+  },
+  "altars-of-apostasy.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/6-1b_Calm.ogg?bbd6f7",
+   "bytes": 8014295,
+   "sha1": "bbd6f70e447b8c0ed2022158e67122a98c1abc75",
+   "wiki": "6-1b Calm.ogg"
+  },
+  "altars-of-apostasy-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/6-1b_Combat.ogg?4d9da2",
+   "bytes": 6703543,
+   "sha1": "4d9da299083f53452602bc5842ae246a058152aa",
+   "wiki": "6-1b Combat.ogg"
+  },
+  "the-world-looks-red.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/7-1_Clean.ogg?662f0d",
+   "bytes": 7273940,
+   "sha1": "662f0d31a2293abcbdb4e0e93b33dee7b3e6b653",
+   "wiki": "7-1 Clean.ogg"
+  },
+  "the-world-looks-red-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/7-1.ogg?2a7754",
+   "bytes": 10141822,
+   "sha1": "2a775499effa8efb99c294b5e6577b4c96fe103c",
+   "wiki": "7-1.ogg"
+  },
+  "no-devil-lived-on.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-2_Clean.ogg?733c65",
+   "bytes": 8034253,
+   "sha1": "733c65aa8e29210885685f95b096b26a0dccbbab",
+   "wiki": "8-2 Clean.ogg"
+  },
+  "no-devil-lived-on-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-2.ogg?e7d0f7",
+   "bytes": 8070650,
+   "sha1": "e7d0f7ff1b366640933538a47c1e68872861d32c",
+   "wiki": "8-2.ogg"
+  },
+  "the-shattering-circle.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-3_Clean.ogg?adc047",
+   "bytes": 11028571,
+   "sha1": "adc0474bbe362e150dbdbb8e33676139ce5c5020",
+   "wiki": "8-3 Clean.ogg"
+  },
+  "the-shattering-circle-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-3.ogg?221ee0",
+   "bytes": 10968416,
+   "sha1": "221ee03170de8f5b716b97da79f3e986a72ebbb9",
+   "wiki": "8-3.ogg"
+  },
+  "a-part-falling.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/A_Part_Falling_Clean.ogg?25b156",
+   "bytes": 8894386,
+   "sha1": "25b156d0e947431bef513b199a1e914d67fe6255",
+   "wiki": "A Part Falling Clean.ogg"
+  },
+  "a-part-falling-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/A_Part_Falling_Combat.ogg?4fc888",
+   "bytes": 9419624,
+   "sha1": "4fc888c504fdeab45cf74b56321afb061201376f",
+   "wiki": "A Part Falling Combat.ogg"
+  },
+  "hear-the-siren-song.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/7-2_Clean.ogg?101409",
+   "bytes": 7929762,
+   "sha1": "1014097170781cf767ec7df47c8b11dfc148e6b0",
+   "wiki": "7-2 Clean.ogg"
+  },
+  "hear-the-siren-song-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/7-2.ogg?bcfbad",
+   "bytes": 9269587,
+   "sha1": "bcfbadeb66a70df9a7ddb25df66434bc877abf83",
+   "wiki": "7-2.ogg"
+  },
+  "danse-macabre.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/7-3_Clean.ogg?edc1a0",
+   "bytes": 4888644,
+   "sha1": "edc1a08613b8c29d36d77e486e805e69fde5c3e9",
+   "wiki": "7-3 Clean.ogg"
+  },
+  "danse-macabre-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/7-3.ogg?ba6074",
+   "bytes": 5322686,
+   "sha1": "ba607461d837efe9d774d5c8d874591b6f94d8a7",
+   "wiki": "7-3.ogg"
+  },
+  "event-horizon.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-3_Space_Clean.ogg?29cf3d",
+   "bytes": 6496786,
+   "sha1": "29cf3d921a2a66b7d59984f5c740d374473aeaf7",
+   "wiki": "8-3 Space Clean.ogg"
+  },
+  "event-horizon-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-3_Space.ogg?c86746",
+   "bytes": 8143225,
+   "sha1": "c867469a04007d3f61320c5ba787326ef152b3c8",
+   "wiki": "8-3 Space.ogg"
+  },
+  "an-absence.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/An_Absence_Clean.ogg?c1a18e",
+   "bytes": 6783469,
+   "sha1": "c1a18eb18b79a6254b5e3ea4e8b3ae21b2e8b148",
+   "wiki": "An Absence Clean.ogg"
+  },
+  "an-absence-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/An_Absence_Combat.ogg?3ee839",
+   "bytes": 10100825,
+   "sha1": "3ee839c6a6bc89009ea26cb2f5915f2027f0daf9",
+   "wiki": "An Absence Combat.ogg"
+  },
+  "dead-heat-pulse.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Dead_Heat_Pulse_Clean.ogg?e5de2f",
+   "bytes": 9931807,
+   "sha1": "0e5de2f253d6d50e655dcbedc1c747b967b05ef8",
+   "wiki": "Dead Heat Pulse Clean.ogg"
+  },
+  "dead-heat-pulse-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Dead_Heat_Pulse_Combat.ogg?946417",
+   "bytes": 10045657,
+   "sha1": "946417f5e56c44c509dbd14f5dc03544472d416b",
+   "wiki": "Dead Heat Pulse Combat.ogg"
+  },
+  "tenebre-rosso-sangue.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/P-2a_Calm.ogg?d92364",
+   "bytes": 2547572,
+   "sha1": "d923646749db6b279cdab40d721dfbfecd90791f",
+   "wiki": "P-2a Calm.ogg"
+  },
+  "tenebre-rosso-sangue-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/P-2a_Combat.ogg?b2b205",
+   "bytes": 2561609,
+   "sha1": "b2b205516b9b60f65753766c0dae632002175b09",
+   "wiki": "P-2a Combat.ogg"
+  },
+  "chord-of-the-crooked-saints.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/ChordOfTheCrookedSaintscalm_trim.ogg?47b128",
+   "bytes": 1842461,
+   "sha1": "47b128ed3e37437dfa4477c00f36cb85eb471b9f",
+   "wiki": "ChordOfTheCrookedSaintscalm trim.ogg"
+  },
+  "chord-of-the-crooked-saints-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/ChordOfTheCrookedSaintscombat_trim.ogg?e56cfb",
+   "bytes": 2625046,
+   "sha1": "e56cfbed32a53fa60bb03b2ca967e8da946c7ab4",
+   "wiki": "ChordOfTheCrookedSaintscombat trim.ogg"
+  },
+  "danse-macabre-marked.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Danse_Macabre_Clean_Marked.ogg?9dac89",
+   "bytes": 2311552,
+   "sha1": "9dac8916cf4f9796709d5ec05c972eda269ce114",
+   "wiki": "Danse Macabre Clean Marked.ogg"
+  },
+  "danse-macabre-marked-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Danse_Macabre_Marked.ogg?f98e38",
+   "bytes": 2196334,
+   "sha1": "f98e38b3b00b4ae67eb8513c95995ecfcb29466a",
+   "wiki": "Danse Macabre Marked.ogg"
+  },
+  "no-devil-lived-on-shopping.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-2_Shopping_Clean.ogg?cd7469",
+   "bytes": 7238347,
+   "sha1": "cd746998ae4cef39a8e76be99d7cec98314da82e",
+   "wiki": "8-2 Shopping Clean.ogg"
+  },
+  "no-devil-lived-on-shopping-combat.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-2_Shopping.ogg?424aab",
+   "bytes": 9271388,
+   "sha1": "424aabc84e9168ad2fa090a6f5ffb2503a1dfc75",
+   "wiki": "8-2 Shopping.ogg"
+  },
+  "order.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Order.ogg?6a7fff",
+   "bytes": 10398937,
+   "sha1": "6a7ffff2427f6ef4f241a08839906c8e20d2ba7f",
+   "wiki": "Minos Prime.ogg"
+  },
+  "order-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Minos_Prime_Intro.ogg?998ac4",
+   "bytes": 1980432,
+   "sha1": "998ac417d93b4f144d3f795f86ce23575b7617e6",
+   "wiki": "Minos Prime Intro.ogg"
+  },
+  "war.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/War.ogg?7e9d69",
+   "bytes": 10447415,
+   "sha1": "7e9d69438841bf97adacd0f5ecbb8637c62ac6ed",
+   "wiki": "Sisyphus Prime.ogg"
+  },
+  "war-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Sisyphus_Prime_Intro.ogg?957b6a",
+   "bytes": 2411298,
+   "sha1": "957b6adcc2ed18ac87ccc53a3379fcaed71248f8",
+   "wiki": "Sisyphus Prime Intro.ogg"
+  },
+  "earthmover-brain.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Centaur_B-3.ogg?9d99d5",
+   "bytes": 2255469,
+   "sha1": "9d99d56859f3027089bb8c2f933cdfafe00a4bce",
+   "wiki": "Centaur B-3.ogg"
+  },
+  "earthmover-defense-system.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Centaur_A-5.ogg?30d243",
+   "bytes": 2330511,
+   "sha1": "30d243fbce749aba2ec68275144332064c5346df",
+   "wiki": "Centaur A-5.ogg"
+  },
+  "cerberus.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Cerberus.ogg?ed6e9a",
+   "bytes": 680843,
+   "sha1": "ed6e9a411b3282705b0d48dc3f78059d95fde99d",
+   "wiki": "0-5 Calm.ogg"
+  },
+  "cerberus-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/CerberusIntro.ogg?8bfe9a",
+   "bytes": 296032,
+   "sha1": "8bfe9ace7a15b7e0e77e6726d620615238c6dea6",
+   "wiki": "CerberusIntro.ogg"
+  },
+  "cerberus-2.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Cerberus2.ogg?e72dce",
+   "bytes": 1366915,
+   "sha1": "e72dceea5870811794fcb24501e2c171dd9d0d8c",
+   "wiki": "0-5 Combat.ogg"
+  },
+  "mirror-rim.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-2_Mirror_Reaper.ogg?7b68f9",
+   "bytes": 3779209,
+   "sha1": "7b68f93960ffc02369ab0c92425f5f85aad0244e",
+   "wiki": "8-2 Mirror Reaper.ogg"
+  },
+  "mirror-rim-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-2_Mirror_Reaper_Intro.ogg?ddb267",
+   "bytes": 931324,
+   "sha1": "ddb26764be1ba528a531bc4500537d3f213f744c",
+   "wiki": "8-2 Mirror Reaper Intro.ogg"
+  },
+  "the-abyss-and-the-serpent.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Leviathan_A.ogg?51924d",
+   "bytes": 4860195,
+   "sha1": "51924dc322be378d02b01cb5a201b08183af5684",
+   "wiki": "Leviathan A.ogg"
+  },
+  "the-abyss-and-the-serpent-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/AbyssIntro.ogg?b54afc",
+   "bytes": 1910284,
+   "sha1": "b54afcd2b485bb0e77f5a911aff1ca0ed18bdf73",
+   "wiki": "AbyssIntro.ogg"
+  },
+  "the-abyss-and-the-serpent-2.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Leviathan_B.ogg?67c4fb",
+   "bytes": 5032968,
+   "sha1": "67c4fb01ef1c6c5ed533e69ed998b59b43f7e582",
+   "wiki": "Leviathan B.ogg"
+  },
+  "he-is-the-light.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Ferryman_A.ogg?d36706",
+   "bytes": 2596227,
+   "sha1": "d36706d8de9777f05c526e52c4f6c6f44388fef3",
+   "wiki": "Ferryman A.ogg"
+  },
+  "he-is-the-light-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Ferryman_Intro.ogg?e5ba8d",
+   "bytes": 1883489,
+   "sha1": "e5ba8d572f9d5c2d106242c82157dc3499123905",
+   "wiki": "Ferryman Intro.ogg"
+  },
+  "he-is-the-light-2.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Ferryman_C.ogg?e5a046",
+   "bytes": 1961597,
+   "sha1": "e5a04669f4ae7fc24f4677215c99681b62436793",
+   "wiki": "Ferryman C.ogg"
+  },
+  "the-fall.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-4.ogg?264478",
+   "bytes": 4232383,
+   "sha1": "2644788b98af399006c3f387cfd5dfe4af2194fd",
+   "wiki": "8-4.ogg"
+  },
+  "the-fall-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-4_Intro.ogg?601585",
+   "bytes": 2620527,
+   "sha1": "601585be2856f2a60051b7f55695934853f6186d",
+   "wiki": "8-4 Intro.ogg"
+  },
+  "bull-of-hell.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Minotaur_A.ogg?4e51e8",
+   "bytes": 5861663,
+   "sha1": "4e51e84c507de557e582d1dfa13f9d65d7e40f26",
+   "wiki": "Minotaur A.ogg"
+  },
+  "bull-of-hell-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Minotaur_Intro.ogg?41ef1e",
+   "bytes": 1176908,
+   "sha1": "41ef1ec21bb40fe300200d57a49d2bedba4f66be",
+   "wiki": "Minotaur Intro.ogg"
+  },
+  "bull-of-hell-2.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Minotaur_B.ogg?4f1ae4",
+   "bytes": 759229,
+   "sha1": "4f1ae44a2732a53873f1335477158caf6b228fa8",
+   "wiki": "Minotaur B.ogg"
+  },
+  "divine-intervention.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Divine_Intervention.ogg?5ae371",
+   "bytes": 3047902,
+   "sha1": "5ae3710f957e56f77cb6d4be6ee166d6abe5fdde",
+   "wiki": "Gabriel 3-2.ogg"
+  },
+  "the-death-of-gods-will.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Death_Of_Gods_Will.ogg?3eb767",
+   "bytes": 1730570,
+   "sha1": "3eb767d08a22b2cccf7888108ee4dfb6db3f6ff8",
+   "wiki": "Death Of Gods Will.ogg"
+  },
+  "chaos.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Chaos.ogg?a721f7",
+   "bytes": 830782,
+   "sha1": "0a721f75fb35f9e10f92ed1dfdd4f6925637d675",
+   "wiki": "Flesh Prison loop.ogg"
+  },
+  "pandemonium.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Pandemonium.ogg?99d2c9",
+   "bytes": 1264658,
+   "sha1": "99d2c93648cacc41084ca6f74971ae3c43b5fa4d",
+   "wiki": "Flesh Panopticon Loop.ogg"
+  },
+  "theme-of-cancer.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/ThemeOfCancer.ogg?365a49",
+   "bytes": 3537458,
+   "sha1": "365a498eadd8ba086942fd9b4c80a142a8bf02dc",
+   "wiki": "ThemeOfCancer.ogg"
+  },
+  "complete-and-utter-destruction.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/1-2_Combat.ogg?649c23",
+   "bytes": 5698430,
+   "sha1": "649c23700832b0fd3f87477f036eb147418d36b9",
+   "wiki": "1-2 Combat.ogg"
+  },
+  "complete-and-utter-destruction-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/1-2_Drone_Combat.ogg?47b472",
+   "bytes": 744206,
+   "sha1": "47b4720f66bc11ef388ce792580a152dc58fa68f",
+   "wiki": "1-2 Drone Combat.ogg"
+  },
+  "peace-a-thousand-greetings.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/A_Thousand_Greetings.ogg?373b83",
+   "bytes": 3282585,
+   "sha1": "373b838d1df54f8438177ee22afeb0ceec1e3732",
+   "wiki": "A Thousand Greetings.ogg"
+  },
+  "peace-lakeside-songbook-1.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/5-S_A.ogg?58533c",
+   "bytes": 8363297,
+   "sha1": "58533c06998e1221fc7ff91b85a0561b94d4c58e",
+   "wiki": "5-S A.ogg"
+  },
+  "peace-lakeside-songbook-2.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/5-S_B.ogg?b2a0ff",
+   "bytes": 2511188,
+   "sha1": "b2a0ff2287ca488a59ffd8f74144b4b115197126",
+   "wiki": "5-S B.ogg"
+  },
+  "peace-lakeside-songbook-3.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/5-S_C.ogg?53b861",
+   "bytes": 3179825,
+   "sha1": "53b861d760582abbc823a9e461c3cd42777bd2c8",
+   "wiki": "5-S C.ogg"
+  },
+  "peace-lakeside-songbook-4.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/5-S_D.ogg?10a500",
+   "bytes": 2737808,
+   "sha1": "10a5001ad2d98e2de95ae3e8758d0b1424abfe93",
+   "wiki": "5-S D.ogg"
+  },
+  "peace-lakeside-songbook-5.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/5-S_E.ogg?4b4baf",
+   "bytes": 1143403,
+   "sha1": "4b4baffd4718f6ecd9365317dc17da66010db7ef",
+   "wiki": "5-S E.ogg"
+  },
+  "peace-silence-introspection.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Act2_Epilogue_1.ogg?6c97e9",
+   "bytes": 641394,
+   "sha1": "6c97e9184acd538a500c73ef18effe1e45e6fa1f",
+   "wiki": "Act2 Epilogue 1.ogg"
+  },
+  "peace-the-world-looks-white.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/7-1_Intro.ogg?e5371b",
+   "bytes": 7403902,
+   "sha1": "e5371bbe21183288ad52b4239ea89e0316e81c45",
+   "wiki": "7-1 Intro.ogg"
+  },
+  "peace-do-robots-dream.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/7-2_Intro_Clean.ogg?c1467a",
+   "bytes": 1100641,
+   "sha1": "0c1467a22777966b995f7479040174a79e63d394",
+   "wiki": "7-2 Intro Clean.ogg"
+  },
+  "peace-suffering-leaves.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/7-3_Intro_Clean.ogg?61d6f4",
+   "bytes": 7576756,
+   "sha1": "61d6f4031dc8a7c362ffa3235b718ed899ce4cbc",
+   "wiki": "7-3 Intro Clean.ogg"
+  },
+  "peace-never-odd-or-even-1.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-2_Intro_A.ogg?b187a0",
+   "bytes": 5766363,
+   "sha1": "b187a07615dafe5d58c2f885ae2ecf5442d1d30e",
+   "wiki": "8-2 Intro A.ogg"
+  },
+  "peace-never-odd-or-even-2.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-2_Intro_B.ogg?f64355",
+   "bytes": 5806704,
+   "sha1": "f64355fa164456d289381c7985787e7841a1eca1",
+   "wiki": "8-2 Intro B.ogg"
+  },
+  "peace-death-odyssey-aftermath.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/5-3b_Calm.ogg?9f47c2",
+   "bytes": 5499010,
+   "sha1": "9f47c29f2f1ce0a1e1ee3ff8c0375ea021d14543",
+   "wiki": "5-3b Calm.ogg"
+  },
+  "peace-no-devil-lived-on-ambient.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/8-2_Ambient.ogg?f30e42",
+   "bytes": 7091566,
+   "sha1": "f30e429dca13e6b6011b2a5a2cee6c484e7226cc",
+   "wiki": "8-2 Ambient.ogg"
+  },
+  "peace-closing-time.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Closing_Time.ogg?1e424a",
+   "bytes": 12437113,
+   "sha1": "1e424a75d77be71227a416a4a3e4cdf67a9fdf3c",
+   "wiki": "Closing Time.ogg"
+  },
+  "peace-dream-of-finland.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Dream_of_Finland.ogg?1bc16c",
+   "bytes": 12925102,
+   "sha1": "1bc16c6d79f18dd399710fbb7ab1421823c4d254",
+   "wiki": "Dream of Finland.ogg"
+  },
+  "peace-the-world-and-so-much-more.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/The_World_and_So_Much_More.ogg?7359a0",
+   "bytes": 12371502,
+   "sha1": "7359a0a72cf4d36fe8eb1e4170a5f14ba5a41b7a",
+   "wiki": "The World and So Much More.ogg"
+  },
+  "peace-beyond-the-veil-of-night.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Beyond_the_Veil_of_Night.ogg?755043",
+   "bytes": 19352890,
+   "sha1": "7550435b724b2548aa9dea05da0124d41dea6d0e",
+   "wiki": "Beyond the Veil of Night.ogg"
+  },
+  "peace-disgrace-humiliation.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/DisgraceHumiliation_Loop.ogg?f5659f",
+   "bytes": 1710400,
+   "sha1": "0f5659f34773fe61a941aa572f4ec04eda724374",
+   "wiki": "DisgraceHumiliation Loop.ogg"
+  },
+  "peace-clair-de-lune.ogg": {
+   "url": null,
+   "bytes": null,
+   "sha1": null,
+   "wiki": null
+  },
+  "pvp-hateful.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/HEALTH_-_HATEFUL_%28Loop%29.ogg?de4b9b",
+   "bytes": 14230789,
+   "sha1": "de4b9b925c464d959e8b241c5dee5b3cfe66178d",
+   "wiki": "HEALTH - HATEFUL (Loop).ogg"
+  },
+  "pvp-hateful-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/HEALTH_-_HATEFUL_%28Intro%29.ogg?fdfa44",
+   "bytes": 1104428,
+   "sha1": "fdfa44746d49ea30f7cf9e86ced6675c67885ac2",
+   "wiki": "HEALTH - HATEFUL (Intro).ogg"
+  },
+  "pvp-hateful-instrumental.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/HEALTH_-_HATEFUL_%28Instrumental%29.ogg?b53060",
+   "bytes": 14323112,
+   "sha1": "b53060cb5c4bc5b45a8209366c6fb790350c6eb7",
+   "wiki": "HEALTH - HATEFUL (Instrumental).ogg"
+  },
+  "pvp-ultrachurch.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/ULTRACHURCH_%28Loop%29.ogg?6aa432",
+   "bytes": 12309555,
+   "sha1": "6aa432c85033d1dd13c2ed1bde055b024513bcc3",
+   "wiki": "ULTRACHURCH (Loop).ogg"
+  },
+  "pvp-ultrachurch-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/ULTRACHURCH_%28Intro%29.ogg?c91f3d",
+   "bytes": 1454184,
+   "sha1": "c91f3dd96b7767c96bbb7004251a6f2cb9f4f9f5",
+   "wiki": "ULTRACHURCH (Intro).ogg"
+  },
+  "pvp-ni4ni.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Vylet_Pony_-_NI4NI_%28Loop%29.ogg?f24493",
+   "bytes": 15572551,
+   "sha1": "f24493970beddad33e1b2aa837ea06c6e7a48cd7",
+   "wiki": "Vylet Pony - NI4NI (Loop).ogg"
+  },
+  "pvp-ni4ni-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Vylet_Pony_-_NI4NI_%28Intro%29.ogg?d95151",
+   "bytes": 994488,
+   "sha1": "d95151d3be5fa86f64c7c85cd80d1562beec53d3",
+   "wiki": "Vylet Pony - NI4NI (Intro).ogg"
+  },
+  "pvp-ni4ni-instrumental.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Vylet_Pony_-_NI4NI_%28Instrumental_Loop%29.ogg?bfc372",
+   "bytes": 15654108,
+   "sha1": "bfc372f25efba9fe1aea16c2605113402c6619a3",
+   "wiki": "Vylet Pony - NI4NI (Instrumental Loop).ogg"
+  },
+  "pvp-firstlayer.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Firstlayer.ogg?f302a7",
+   "bytes": 7668363,
+   "sha1": "f302a74b9e5fa73a95988eba1e32828db8b46aa7",
+   "wiki": "Firstlayer.ogg"
+  },
+  "pvp-versus.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Versus_Loop.ogg?da6026",
+   "bytes": 1529785,
+   "sha1": "da60260218b3ace500dea5fb93d093ea5fbbd885",
+   "wiki": "Versus Loop.ogg"
+  },
+  "pvp-versus-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/V2_Intro.ogg?8138f5",
+   "bytes": 105093,
+   "sha1": "8138f524de7f0ccffbf9818a55a03ce7c5f4344e",
+   "wiki": "Versus Intro.ogg"
+  },
+  "pvp-duel.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Duel_Loop.ogg?895b22",
+   "bytes": 1688568,
+   "sha1": "895b22fed11c2581c31333bb8ef38f20bc65cd56",
+   "wiki": "Duel Loop.ogg"
+  },
+  "pvp-duel-intro.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Duel_Intro.ogg?a455a6",
+   "bytes": 483160,
+   "sha1": "a455a67b1e4a5525fc8391103ca09326ba09883b",
+   "wiki": "Duel Intro.ogg"
+  },
+  "slot-menu.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Theme_on_Piano_and_Horns.ogg?54d63e",
+   "bytes": 1383812,
+   "sha1": "54d63e45600ca4a29e1e2dc260a4c9f1f0b4c3cf",
+   "wiki": "Theme on Piano and Horns.ogg"
+  },
+  "slot-editor.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/AfterHours.ogg?5b76e5",
+   "bytes": 4694041,
+   "sha1": "5b76e5af933da1402288f84fc6f254f74717a483",
+   "wiki": "AfterHours.ogg"
+  },
+  "slot-menu-halloween.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/The_Fire_Is_Gone_%28Halloween%29.ogg?903b41",
+   "bytes": 2512862,
+   "sha1": "903b41c61e86a1c0854628ffef678d1f8869676d",
+   "wiki": "The Fire Is Gone (Halloween).ogg"
+  },
+  "slot-menu-christmas.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/The_Fire_Is_Gone_%28Christmas%29.ogg?9d6bbe",
+   "bytes": 2080922,
+   "sha1": "9d6bbe3dbeade7a1c93dfb2770e3ae0b060a4dd1",
+   "wiki": "The Fire Is Gone (Christmas).ogg"
+  },
+  "slot-menu-easter.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/The_Fire_Is_Gone_%28Easter%29.ogg?7b3d9f",
+   "bytes": 2087057,
+   "sha1": "7b3d9fb7981cd497b097407bc1731314eb0071e6",
+   "wiki": "The Fire Is Gone (Easter).ogg"
+  },
+  "special-schematics.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Shopmusic.ogg?d5a681",
+   "bytes": 350630,
+   "sha1": "d5a6812a0f207439bcda020142b475aa8f0e5dd6",
+   "wiki": "Shopmusic.ogg"
+  },
+  "special-database.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Shopmusic4.ogg?7ad97f",
+   "bytes": 333606,
+   "sha1": "7ad97f27f3054739c22eae5769fcf864342534c4",
+   "wiki": "Shopmusic4.ogg"
+  },
+  "special-research.ogg": {
+   "url": "https://ultrakill.wiki.gg/images/Shopmusic3.ogg?6c831a",
+   "bytes": 325148,
+   "sha1": "6c831a28996c12bcb2b8f5a2071ccbc5afe43945",
+   "wiki": "Shopmusic3.ogg"
+  }
+ },
+ "tracks": {
+  "cold-winds": {
+   "label": "Cold Winds",
+   "calm": "cold-winds.ogg",
+   "combat": "cold-winds-combat.ogg"
+  },
+  "guts": {
+   "label": "Guts",
+   "calm": "guts.ogg",
+   "combat": "guts-combat.ogg"
+  },
+  "dancer-in-the-darkness": {
+   "label": "Dancer in the Darkness",
+   "calm": "dancer-in-the-darkness.ogg",
+   "combat": "dancer-in-the-darkness-combat.ogg"
+  },
+  "into-the-fire": {
+   "label": "Into the Fire",
+   "calm": "into-the-fire.ogg",
+   "combat": "into-the-fire-combat.ogg"
+  },
+  "a-shattered-illusion": {
+   "label": "A Shattered Illusion",
+   "calm": "a-shattered-illusion.ogg",
+   "combat": "a-shattered-illusion-combat.ogg"
+  },
+  "requiem": {
+   "label": "Requiem",
+   "calm": "requiem.ogg",
+   "combat": "requiem-combat.ogg"
+  },
+  "glory": {
+   "label": "Glory",
+   "calm": "glory.ogg",
+   "combat": "glory-combat.ogg"
+  },
+  "dune-eternal": {
+   "label": "Dune Eternal",
+   "calm": "dune-eternal.ogg",
+   "combat": "dune-eternal-combat.ogg"
+  },
+  "deep-blue": {
+   "label": "Deep Blue",
+   "calm": "deep-blue.ogg",
+   "combat": "deep-blue-combat.ogg"
+  },
+  "in-absentia": {
+   "label": "In Absentia ΛΟΓΟΣ",
+   "calm": "in-absentia.ogg",
+   "combat": "in-absentia-combat.ogg"
+  },
+  "unstoppable-force": {
+   "label": "Unstoppable Force",
+   "calm": "unstoppable-force.ogg",
+   "combat": "unstoppable-force-combat.ogg"
+  },
+  "castle-vein": {
+   "label": "Castle Vein",
+   "calm": "castle-vein.ogg",
+   "combat": "castle-vein-combat.ogg"
+  },
+  "panic-betrayer": {
+   "label": "Panic Betrayer",
+   "calm": "panic-betrayer.ogg",
+   "combat": "panic-betrayer-combat.ogg"
+  },
+  "sands-of-tide": {
+   "label": "Sands of Tide",
+   "calm": "sands-of-tide.ogg",
+   "combat": "sands-of-tide-combat.ogg"
+  },
+  "death-odyssey": {
+   "label": "Death Odyssey",
+   "calm": "death-odyssey.ogg",
+   "combat": "death-odyssey-combat.ogg"
+  },
+  "spiral-out": {
+   "label": "Spiral Out (Keep Going)",
+   "calm": "spiral-out.ogg",
+   "combat": "spiral-out-combat.ogg"
+  },
+  "the-break": {
+   "label": "The Break (Crimson Glass deComposition)",
+   "calm": "the-break.ogg",
+   "combat": "the-break-combat.ogg"
+  },
+  "a-heart-of-cold": {
+   "label": "A Heart of Cold",
+   "calm": "a-heart-of-cold.ogg",
+   "combat": "a-heart-of-cold-combat.ogg"
+  },
+  "altars-of-apostasy": {
+   "label": "Altars of Apostasy (incl. \"Hall of Sacreligious Remains\")",
+   "calm": "altars-of-apostasy.ogg",
+   "combat": "altars-of-apostasy-combat.ogg"
+  },
+  "the-world-looks-red": {
+   "label": "The World Looks Red",
+   "calm": "the-world-looks-red.ogg",
+   "combat": "the-world-looks-red-combat.ogg"
+  },
+  "no-devil-lived-on": {
+   "label": "No Devil Lived On",
+   "calm": "no-devil-lived-on.ogg",
+   "combat": "no-devil-lived-on-combat.ogg"
+  },
+  "the-shattering-circle": {
+   "label": "The Shattering Circle, or: A Charade of Shadeless Ones and Zeroes Rearranged ad Nihilum",
+   "calm": "the-shattering-circle.ogg",
+   "combat": "the-shattering-circle-combat.ogg"
+  },
+  "a-part-falling": {
+   "label": "A Part Falling",
+   "calm": "a-part-falling.ogg",
+   "combat": "a-part-falling-combat.ogg"
+  },
+  "hear-the-siren-song": {
+   "label": "Hear! The Siren Song Call of Death",
+   "calm": "hear-the-siren-song.ogg",
+   "combat": "hear-the-siren-song-combat.ogg"
+  },
+  "danse-macabre": {
+   "label": "Danse Macabre",
+   "calm": "danse-macabre.ogg",
+   "combat": "danse-macabre-combat.ogg"
+  },
+  "event-horizon": {
+   "label": "Event Horizon (Reach for the Sun and Burn! Burn! Burn!)",
+   "calm": "event-horizon.ogg",
+   "combat": "event-horizon-combat.ogg"
+  },
+  "an-absence": {
+   "label": "An Absence",
+   "calm": "an-absence.ogg",
+   "combat": "an-absence-combat.ogg"
+  },
+  "dead-heat-pulse": {
+   "label": "Dead Heat Pulse (A Heart of Cold)",
+   "calm": "dead-heat-pulse.ogg",
+   "combat": "dead-heat-pulse-combat.ogg"
+  },
+  "tenebre-rosso-sangue": {
+   "label": "Tenebre Rosso Sangue",
+   "calm": "tenebre-rosso-sangue.ogg",
+   "combat": "tenebre-rosso-sangue-combat.ogg"
+  },
+  "chord-of-the-crooked-saints": {
+   "label": "Chord of the Crooked Saints",
+   "calm": "chord-of-the-crooked-saints.ogg",
+   "combat": "chord-of-the-crooked-saints-combat.ogg"
+  },
+  "danse-macabre-marked": {
+   "label": "Danse Macabre (Marked for Death)",
+   "calm": "danse-macabre-marked.ogg",
+   "combat": "danse-macabre-marked-combat.ogg"
+  },
+  "no-devil-lived-on-shopping": {
+   "label": "No Devil Lived On (Shopping)",
+   "calm": "no-devil-lived-on-shopping.ogg",
+   "combat": "no-devil-lived-on-shopping-combat.ogg"
+  },
+  "order": {
+   "label": "Order",
+   "loop": "order.ogg",
+   "intro": "order-intro.ogg",
+   "introSeconds": 47.12
+  },
+  "war": {
+   "label": "War",
+   "loop": "war.ogg",
+   "intro": "war-intro.ogg",
+   "introSeconds": 42.01
+  },
+  "earthmover-brain": {
+   "label": "Earthmover Brain (War Without Reason, B-3)",
+   "loop": "earthmover-brain.ogg"
+  },
+  "earthmover-defense-system": {
+   "label": "Earthmover Defense System (War Without Reason, A-5)",
+   "loop": "earthmover-defense-system.ogg"
+  },
+  "cerberus": {
+   "label": "Cerberus",
+   "loop": "cerberus.ogg",
+   "intro": "cerberus-intro.ogg",
+   "introSeconds": 29.56,
+   "loop2": "cerberus-2.ogg"
+  },
+  "mirror-rim": {
+   "label": "Mirror Rim",
+   "loop": "mirror-rim.ogg",
+   "intro": "mirror-rim-intro.ogg",
+   "introSeconds": 19.22
+  },
+  "the-abyss-and-the-serpent": {
+   "label": "The Abyss and the Serpent",
+   "loop": "the-abyss-and-the-serpent.ogg",
+   "intro": "the-abyss-and-the-serpent-intro.ogg",
+   "introSeconds": 35.91,
+   "loop2": "the-abyss-and-the-serpent-2.ogg"
+  },
+  "he-is-the-light": {
+   "label": "He Is the Light in My Darkness",
+   "loop": "he-is-the-light.ogg",
+   "intro": "he-is-the-light-intro.ogg",
+   "introSeconds": 40.41,
+   "loop2": "he-is-the-light-2.ogg"
+  },
+  "the-fall": {
+   "label": "The Fall",
+   "loop": "the-fall.ogg",
+   "intro": "the-fall-intro.ogg",
+   "introSeconds": 46.38
+  },
+  "bull-of-hell": {
+   "label": "Bull of Hell",
+   "loop": "bull-of-hell.ogg",
+   "intro": "bull-of-hell-intro.ogg",
+   "introSeconds": 20.58,
+   "loop2": "bull-of-hell-2.ogg"
+  },
+  "divine-intervention": {
+   "label": "Divine Intervention",
+   "loop": "divine-intervention.ogg"
+  },
+  "the-death-of-gods-will": {
+   "label": "The Death of God's Will",
+   "loop": "the-death-of-gods-will.ogg"
+  },
+  "chaos": {
+   "label": "CHAOS",
+   "loop": "chaos.ogg"
+  },
+  "pandemonium": {
+   "label": "PANDEMONIUM",
+   "loop": "pandemonium.ogg"
+  },
+  "theme-of-cancer": {
+   "label": "Theme of Cancer",
+   "loop": "theme-of-cancer.ogg"
+  },
+  "complete-and-utter-destruction": {
+   "label": "A Complete and Utter Destruction of the Senses",
+   "loop": "complete-and-utter-destruction.ogg",
+   "intro": "complete-and-utter-destruction-intro.ogg",
+   "introSeconds": 76.66
+  },
+  "a-thousand-greetings": {
+   "label": "A Thousand Greetings",
+   "variants": [
+    "peace-a-thousand-greetings.ogg"
+   ]
+  },
+  "lakeside-songbook": {
+   "label": "Lakeside Songbook",
+   "variants": [
+    "peace-lakeside-songbook-1.ogg",
+    "peace-lakeside-songbook-2.ogg",
+    "peace-lakeside-songbook-3.ogg",
+    "peace-lakeside-songbook-4.ogg",
+    "peace-lakeside-songbook-5.ogg"
+   ]
+  },
+  "silence-introspection": {
+   "label": "Silence. Introspection.",
+   "variants": [
+    "peace-silence-introspection.ogg"
+   ]
+  },
+  "the-world-looks-white": {
+   "label": "The World Looks White",
+   "variants": [
+    "peace-the-world-looks-white.ogg"
+   ]
+  },
+  "do-robots-dream": {
+   "label": "Do Robots Dream of Eternal Sleep?",
+   "variants": [
+    "peace-do-robots-dream.ogg"
+   ]
+  },
+  "suffering-leaves": {
+   "label": "Suffering Leaves Suffering Leaves",
+   "variants": [
+    "peace-suffering-leaves.ogg"
+   ]
+  },
+  "never-odd-or-even": {
+   "label": "Never Odd or Even",
+   "variants": [
+    "peace-never-odd-or-even-1.ogg",
+    "peace-never-odd-or-even-2.ogg"
+   ]
+  },
+  "death-odyssey-aftermath": {
+   "label": "Death Odyssey Aftermath",
+   "variants": [
+    "peace-death-odyssey-aftermath.ogg"
+   ]
+  },
+  "no-devil-lived-on-ambient": {
+   "label": "No Devil Lived On (Ambient)",
+   "variants": [
+    "peace-no-devil-lived-on-ambient.ogg"
+   ]
+  },
+  "closing-time": {
+   "label": "Closing Time",
+   "variants": [
+    "peace-closing-time.ogg"
+   ]
+  },
+  "dream-of-finland": {
+   "label": "Dream of Finland",
+   "variants": [
+    "peace-dream-of-finland.ogg"
+   ]
+  },
+  "the-world-and-so-much-more": {
+   "label": "The World, and So Much More",
+   "variants": [
+    "peace-the-world-and-so-much-more.ogg"
+   ]
+  },
+  "beyond-the-veil-of-night": {
+   "label": "Beyond the Veil of Night",
+   "variants": [
+    "peace-beyond-the-veil-of-night.ogg"
+   ]
+  },
+  "disgrace-humiliation": {
+   "label": "Disgrace. Humiliation.",
+   "variants": [
+    "peace-disgrace-humiliation.ogg"
+   ]
+  },
+  "clair-de-lune": {
+   "label": "Clair de Lune (положить вручную: peace-clair-de-lune.ogg)",
+   "variants": [
+    "peace-clair-de-lune.ogg"
+   ],
+   "manual": true
+  },
+  "hateful": {
+   "label": "HEALTH - HATEFUL",
+   "loop": "pvp-hateful.ogg",
+   "intro": "pvp-hateful-intro.ogg",
+   "introSeconds": 16.93
+  },
+  "hateful-instrumental": {
+   "label": "HEALTH - HATEFUL (Instrumental)",
+   "loop": "pvp-hateful-instrumental.ogg",
+   "intro": "pvp-hateful-intro.ogg",
+   "introSeconds": 16.93
+  },
+  "ultrachurch": {
+   "label": "ULTRACHURCH",
+   "loop": "pvp-ultrachurch.ogg",
+   "intro": "pvp-ultrachurch-intro.ogg",
+   "introSeconds": 26.14
+  },
+  "ni4ni": {
+   "label": "Vylet Pony - NI4NI",
+   "loop": "pvp-ni4ni.ogg",
+   "intro": "pvp-ni4ni-intro.ogg",
+   "introSeconds": 16.94
+  },
+  "ni4ni-instrumental": {
+   "label": "Vylet Pony - NI4NI (Instrumental)",
+   "loop": "pvp-ni4ni-instrumental.ogg",
+   "intro": "pvp-ni4ni-intro.ogg",
+   "introSeconds": 16.94
+  },
+  "firstlayer": {
+   "label": "Firstlayer (вырезанный из игры)",
+   "loop": "pvp-firstlayer.ogg"
+  },
+  "versus": {
+   "label": "Versus (1-4)",
+   "loop": "pvp-versus.ogg",
+   "intro": "pvp-versus-intro.ogg",
+   "introSeconds": 8.0
+  },
+  "duel": {
+   "label": "Duel (4-4)",
+   "loop": "pvp-duel.ogg",
+   "intro": "pvp-duel-intro.ogg",
+   "introSeconds": 8.0
+  }
+ },
+ "tiers": {
+  "lowmedium": [
+   "cold-winds",
+   "guts",
+   "dancer-in-the-darkness",
+   "into-the-fire",
+   "a-shattered-illusion",
+   "requiem",
+   "glory",
+   "dune-eternal",
+   "deep-blue",
+   "in-absentia",
+   "chord-of-the-crooked-saints"
+  ],
+  "high": [
+   "unstoppable-force",
+   "castle-vein",
+   "panic-betrayer",
+   "sands-of-tide",
+   "death-odyssey",
+   "spiral-out",
+   "the-break",
+   "a-heart-of-cold"
+  ],
+  "extreme": [
+   "altars-of-apostasy",
+   "the-world-looks-red",
+   "no-devil-lived-on",
+   "the-shattering-circle",
+   "a-part-falling"
+  ],
+  "eradication": [
+   "hear-the-siren-song",
+   "danse-macabre",
+   "event-horizon",
+   "an-absence",
+   "dead-heat-pulse",
+   "danse-macabre-marked",
+   "no-devil-lived-on-shopping"
+  ],
+  "unreasonable": [
+   "tenebre-rosso-sangue"
+  ]
+ },
+ "guardians": {
+  "toxopid": "order",
+  "reign": "war",
+  "corvus": "earthmover-brain",
+  "scepter": "cerberus",
+  "arkyid": "mirror-rim",
+  "vela": "earthmover-defense-system",
+  "omura": "the-abyss-and-the-serpent",
+  "navanax": "he-is-the-light",
+  "eclipse": "the-fall",
+  "oct": "bull-of-hell",
+  "antumbra": "divine-intervention",
+  "quad": "the-death-of-gods-will",
+  "sei": "chaos",
+  "aegires": "pandemonium",
+  "dagger": "theme-of-cancer",
+  "mace": "theme-of-cancer",
+  "flare": "theme-of-cancer",
+  "horizon": "theme-of-cancer",
+  "nova": "theme-of-cancer",
+  "pulsar": "theme-of-cancer",
+  "crawler": "theme-of-cancer",
+  "atrax": "theme-of-cancer",
+  "mono": "theme-of-cancer",
+  "poly": "theme-of-cancer",
+  "risso": "theme-of-cancer",
+  "minke": "theme-of-cancer",
+  "retusa": "theme-of-cancer",
+  "oxynoe": "theme-of-cancer",
+  "stell": "theme-of-cancer",
+  "locus": "theme-of-cancer",
+  "merui": "theme-of-cancer",
+  "cleroi": "theme-of-cancer",
+  "elude": "theme-of-cancer",
+  "avert": "theme-of-cancer"
+ },
+ "guardianDefault": "complete-and-utter-destruction",
+ "peace": [
+  "a-thousand-greetings",
+  "lakeside-songbook",
+  "silence-introspection",
+  "the-world-looks-white",
+  "do-robots-dream",
+  "suffering-leaves",
+  "never-odd-or-even",
+  "death-odyssey-aftermath",
+  "no-devil-lived-on-ambient",
+  "closing-time",
+  "dream-of-finland",
+  "the-world-and-so-much-more",
+  "beyond-the-veil-of-night",
+  "disgrace-humiliation",
+  "clair-de-lune"
+ ],
+ "special": {
+  "schematics": "special-schematics.ogg",
+  "database": "special-database.ogg",
+  "research": "special-research.ogg"
+ },
+ "pvp": [
+  "hateful",
+  "hateful-instrumental",
+  "ultrachurch",
+  "ni4ni",
+  "ni4ni-instrumental",
+  "firstlayer",
+  "versus",
+  "duel"
+ ],
+ "holidays": {
+  "halloween": {
+   "file": "slot-menu-halloween.ogg"
+  },
+  "christmas": {
+   "file": "slot-menu-christmas.ogg"
+  },
+  "easter": {
+   "file": "slot-menu-easter.ogg"
+  }
+ },
+ "slots": {
+  "menu": "slot-menu.ogg",
+  "editor": "slot-editor.ogg"
+ }
+}

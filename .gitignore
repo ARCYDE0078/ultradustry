@@ -1,0 +1,6 @@
+# локальные артефакты сборки и тестов, в репозиторий не входят
+*.zip
+*.part
+ultradustry-debug*.log
+node_modules/
+.DS_Store
